@@ -4,7 +4,7 @@ import os
 import dj_database_url
 from .dev import *
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG=False
 
 DATABASES = {
@@ -13,4 +13,4 @@ DATABASES = {
     )
 }
 
-ALLOWED_HOSTS = [os.environ.get('DOMAIN')]
+ALLOWED_HOSTS = [os.getenv('DOMAIN')]
