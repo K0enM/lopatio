@@ -9,7 +9,7 @@ DEBUG=False
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=environ('DATABASE_URL')
+        default=os.getenv('DATABASE_URL')
     )
 }
 
