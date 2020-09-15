@@ -1,13 +1,20 @@
-# vuedjangoherokutest
+# \'Lo Patio Website
 
 ## Project setup
 ```
-yarn install
+yarn install && pipenv install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for frontend development
+
 ```
 yarn serve
+```
+
+### Serves backend development server
+
+```
+pipenv shell && python manage.py runserver
 ```
 
 ### Compiles and minifies for production
