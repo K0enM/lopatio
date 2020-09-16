@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h1>YEETED</h1>
+    <h1 class="font-xl mb-4">'Lo Patio</h1>
+
+    <button class="font-bold py-2 px-4 rounded bg-blue-500 text-white">KLIK!</button>
   </div>
 </template>
 
