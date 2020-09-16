@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 
 DEBUG=False
 
-ALLOWED_HOSTS = ['django-vue-test-template.herokuapp.com']
+ALLOWED_HOSTS = ['django-vue-test-template.herokuapp.com', 'www.lopatio.nl', 'lopatio.nl']
 
 # Application definition
 
