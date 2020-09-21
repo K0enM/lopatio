@@ -4,13 +4,13 @@ module.exports = {
     // purgeLayersByDefault: true,
   },
   purge: [
-    'src/**/*.vue'
+    'src/**/*.vue',
   ],
   theme: {
     extend: {},
   },
   variants: {
-    borderWidth: ['hover', 'focus']
+    borderWidth: ['hover', 'focus'],
   },
   plugins: [],
 };
