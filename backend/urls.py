@@ -1,10 +1,13 @@
 from django.urls import path, include
 from rest_framework import routers
 from knox import views as knox_views
-from backend.views import index_view, LoginView, UserViewSet
+from backend.views import index_view, LoginView, UserViewSet, NicknameViewSet, QuoteViewSet, LeaderbordPositionViewSet
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet,)
+router.register(r'nicknames', NicknameViewSet)
+router.register(r'quotes', QuoteViewSet)
+router.register(r'mongolen_board', LeaderbordPositionViewSet)
 
 urlpatterns = [
   path(r'auth/login/', LoginView.as_view(), name='knox_login'),
